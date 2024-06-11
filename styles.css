@@ -1,0 +1,97 @@
+body {
+    background: url('11ff2af5-ee51-4bc8-9595-72bd127310f5.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Great Vibes', cursive;
+    color: #333;
+    text-align: center;
+    overflow-x: hidden; /* impede o overflow horizontal */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+    text-align: center;
+    max-width: 700px;
+    animation: fadeIn 1s ease-in-out;
+    overflow: hidden;
+    max-height: 90vh; /* assegura que o container não exceda a altura da viewport */
+    overflow-y: auto; /* permite a rolagem vertical */
+}
+
+.heart-image {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff4d4d;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 4em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Arial', sans-serif;
+}
+
+button:hover {
+    background-color: #e43d3d;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#photoContainer {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.our-photo {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
